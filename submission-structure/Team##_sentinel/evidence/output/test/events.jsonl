@@ -1,0 +1,2 @@
+{"timestamp": "2025-08-13T16:00:01", "event_id": "E000", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "customer_id": "C056", "product_sku": "PRD_T_03"}}
+{"timestamp": "2025-08-13T16:00:01", "event_id": "E001", "event_data": {"event_name": "Barcode Switching", "station_id": "SCC1", "customer_id": "C056", "actual_sku": "PRD_A_03", "scanned_sku": "PRD_F_14"}}
