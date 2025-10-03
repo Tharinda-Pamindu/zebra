@@ -58,7 +58,8 @@ def main():
     check_python_version()
     
     # Determine base paths
-    base_dir = Path(__file__).parent.parent.parent
+    script_dir = Path(__file__).parent
+    base_dir = script_dir.parent.parent  # Team##_sentinel directory
     evidence_dir = base_dir / "evidence"
     
     # Default to sample data if no arguments provided
@@ -70,6 +71,7 @@ def main():
             output_dir = evidence_dir / "output" / "test"
     else:
         # Use default paths relative to repository root
+        # From executables: ../../../../data/input
         repo_root = base_dir.parent.parent
         data_dir = repo_root / "data" / "input"
         output_dir = evidence_dir / "output" / "test"
